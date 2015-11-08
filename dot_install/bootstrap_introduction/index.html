@@ -147,184 +147,6 @@
     <a data-toggle="modal" href="#myModal" class="btn btn-primary">show me!</a>
     <div class="modal face" id="myModal">
         <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Mymodal</h4>
-            </div>
-            <div class="modal-body">
-                こんにちは！
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-primary" data-dismiss="modal">OK!</button>
-            </div>
-        </div>
-        </div>
-    </div>
-
-    <ul class="nav nav-tabs" style="margin-bottom: 15px">
-        <li class="active"><a href="#home" data-toggle="tab">Home</a> </li>
-        <li><a href="#about" data-toggle="tab">About</a> </li>
-    </ul>
-    <div class="tab-content">
-        <div class="active tab-pane" id="home">ほーむだよー</div>
-        <div class="tab-pane" id="about">あばおうとだよー</div>
-    </div>
-
-    <p>
-        <a href="#" data-toggle="tooltip" title="説明">this</a> and
-        <a href="#" data-toggle="popover" title="説明" data-content="さらに説明"> that</a></div>.
-    </p>
-
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrapの練習</title>
-    <link rel="shortcut icon" href="favicon.ico">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <style>body { padding-top: 70px; }</style>
-
-</head>
-<body>
-<div class="container">
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="navbar-header">
-            <button class="navbar-toggle" data-toggle="collapse" data-target=".target">
-                <i class="glyphicon glyphicon-menu-hamburger"></i></button>
-            <a class="navbar-brand" href="">Dotinstall</a>
-        </div>
-        <div class="collapse navbar-collapse target">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="">Link1</a> </li>
-                <li><a href="">Link2</a> </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="">Link3</a> </li>
-                <li><a href="">Link4</a> </li>
-            </ul>
-        </div>
-    </nav>
-
-</div>
-
-<div id="header" class="container" style="background: red;">header</div>
-<div class="container">
-    <div class="row">
-        <div class="col-sm-3 hidden-xs" style="background: gray;">Side1</div>
-        <div class="col-sm-6 col-xs-6" style="background: green;">Main</div>
-        <div class="col-sm-3 col-xs-6" style="background: orange;">Side2</div>
-    </div>
-</div>
-<div id="footer" class="container" style="background: blue;">footer</div>
-<div class="container">
-    <table class="table table-striped table-bordered table-hover table-condensed">
-        <thead>
-        <tr><th>ID</th><th>Score</th></tr>
-        </thead>
-        <tbody>
-        <tr><td>@taguchi</td><td>200</td></tr>
-        <tr class="warning"><td>@fkoji</td><td>300</td></tr>
-        <tr><td>dodinstall</td><td>240</td></tr>
-        </tbody>
-    </table>
-</div>
-
-<div class="container" style="padding: 20px 0">
-    <form class="form-inline" style="margin-bottom: 15px;">
-        <div class="form-group">
-            <label class="sr-only control-label" form ="email">Email</label>
-            <input type="text" id="email" class="form-control" placeholder="email">
-            <!--<span class="help-block">Error!</span>-->
-        </div>
-        <div class="form-group">
-            <input type="submit" value="submit" class="btn btn-primary">
-        </div>
-    </form>
-
-    <form class="form-horizontal" style="margin-bottom: 15px;">
-        <div class="form-group">
-            <label class="control-label col-sm-2" form ="email">Email</label>
-            <div class="col-sm-4">
-                <input type="text" id="email" class="form-control" placeholder="email">
-            </div>
-            <!--<span class="help-block">Error!</span>-->
-        </div>
-        <div class="form-group">
-            <label class="control-label col-sm-2" form ="email">Email</label>
-            <div class="col-sm-4">
-                <input type="text" id="email" class="form-control" placeholder="email">
-            </div>
-            <!--<span class="help-block">Error!</span>-->
-        </div>
-        <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-4">
-                <input type="submit" value="submit" class="btn btn-primary"></div>
-        </div>
-    </form>
-</div>
-<div class="container" style="padding: 20px 0">
-    <p><i class="glyphicon glyphicon-book"></i>Book</p>
-    <button class="btn btn-primary"><i class="glyphicon glyphicon-book"></i>Push Me!</button>
-    <div class="btn-group">
-        <button class="btn btn-primary"><i class="glyphicon glyphicon-book"></i>Push Me!</button>
-        <button class="btn btn-success"><i class="glyphicon glyphicon-book"></i>Push Me!</button>
-        <button class="btn btn-info"><i class="glyphicon glyphicon-book"></i>Push Me!</button></div>
-</div>
-<div class="container" style="padding:20px 0">
-    <div class="btn-group">
-        <button class="btn btn-primary">Action</button>
-        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
-        <!--<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Action<span class="caret"></span></button>-->
-        <ul class="dropdown-menu">
-            <li><a href="">Action</a> </li>
-            <li class="divider">Action </li>
-            <li><a href="">Action</a> </li>
-        </ul>
-    </div>
-</div>
-<div class="container" style="padding:20px 0">
-    <ul class="breadcrumb">
-        <li><a href="">Home</a> </li>
-        <li><a href="">Users</a> </li>
-        <li class="active">@menphim </li>
-    </ul>
-
-    <ul class="pagination">
-        <li class="disabled"><a href="">&laquo;</a> </li>
-        <li class="active"><a href="">1</a> </li>
-        <li><a href="">2</a> </li>
-        <li><a href="">3</a> </li>
-        <li><a href="">4</a> </li>
-        <li><a href="">&raquo;</a> </li>
-    </ul>
-    <ul class="pager">
-        <li class="previous disabled"><a href="">前へ</a> </li>
-        <li class="next"><a href="">次へ</a> </li>
-    </ul>
-    <p>Product A<span class="label label-primary">NEW!</span></p>
-    <p>Inbox<span class="badge">5</span></p>
-    <p>Inbox<span class="badge"></span></p>
-    <div class="alert alert-info">
-        <button class="close" data-dismiss="alert">&times;</button>
-        おしらせ！
-    </div>
-    <div class="panel panel-primary">
-        <div class="panel-heading">お知らせ</div>
-        <div class="panel-body">こんにちは</div>
-    </div>
-    <div class="progress">
-        <div class="progress-bar progress-bar-primary" style="width: 60%;"></div>
-    </div>
-    <div class="progress progress-striped active">
-        <div class="progress-bar progress-bar-info" style="width: 40%;"></div>
-        <div class="progress-bar progress-bar-success" style="width: 30%;"></div>
-        <div class="progress-bar progress-bar-warning" style="width: 20%;"></div>
-    </div>
-    <a data-toggle="modal" href="#myModal" class="btn btn-primary">show me!</a>
-    <div class="modal face" id="myModal">
-        <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button class="close" data-dismiss="modal">&times;</button>
@@ -351,8 +173,9 @@
 
     <p>
         <a href="#" data-toggle="tooltip" title="説明">this</a> and
-        <a href="#" data-toggle="popover" title="説明" data-content="さらに説明"> that</a></div>.
-</p>
+        <a href="#" data-toggle="popover" title="説明" data-content="さらに説明"> that</a>.
+    </p>
+    </div>
 
 <div id="carousel-example-generic" class="carousel slide center-block" data-ride="carousel" style="width: 500px">
     <!-- Indicators -->
@@ -394,8 +217,6 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
-
-</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script>
@@ -403,22 +224,6 @@
         $("[data-toggle=tooltip]").tooltip({
             placement:'bottom'
         });
-        $("[data-toggle=popover]").popover({
-
-        });
-    });
-</script>
-</body>
-</html>
-
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script>
-    $(function(){
-       $("[data-toggle=tooltip]").tooltip({
-           placement:'bottom'
-       });
         $("[data-toggle=popover]").popover({
 
         });
