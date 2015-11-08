@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf8">
+    <meta name="description" content="初めてのHTML文書です。">
+    <title>はじめてのHTML</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <!--<style>
+      body{background:skyblue;}
+    </style>-->
+    <link rel="stylesheet" href="mystyles.css">
+</head>
+<body>
+<!--グローバル属性
+id:ひとつしかない要素
+class: 複数ある要素
+style: スタイルを直接指定
+header:
+fotter:
+nav:ナビゲーション
+article:独立しているコンテンツ
+aside:副次的なコンテンツ
+section:それ以外の情報の塊
+h1-h6:みだし
+p:段落
+hr: 水平線
+pre: 開業や字下げを保持
+blockquote: 引用
+div: スタイリング
+ol:ordered list
+ul unordered list
+li lit item
+dl definition list
+dt definition term
+dd definition description
+strng
+br
+span
+a: リンク
+table
+thead
+tbody
+tr: table row
+th: table header
+td: table data
+form
+action:どこに送るか
+method:get/post
+input
+text
+submit
+password
+hiddn
+textarea
+checkbox
+radio
+label
+email
+number
+data
+タグ
+    カテゴリ:どの分類か？
+    コンテンツモデル:どのカテゴリーのタグを入れられるか
+-->
+
+
+
+</body>
+<p id="message">こんにちは</p>
+<header>
+    <article>
+        <h1>アンケート</h1>
+        <form action="survey.php" method="post">
+            <p>メールアドレス:<input type="text" name="email" size="50" maxlength="5" value="abc" required></p>
+            <p>料金:<input type="number" name="rate" size="50" maxlength="5" value="abc"></p>
+            <p>誕生日:<input type="date" name="birthday" size="50" maxlength="5" value="abc"></p>
+            <p>
+                Phone:
+                <label><input type="checkbox" name="phone" value="android" checked> Android</label>
+                <input type="checkbox" name="phone" value="iPhone" id="iPhone"><label for="iPhone"> iPhone</label>
+            </p>
+            <p>
+                City:
+                <select name="City">
+                    <option value="tokyo" selected>Tokyo</option>
+                    <option value="nagoya">Nagoya</option>
+                    <option value="osaka">Osaka</option>
+                    <option value="fukuoka">Fukuoka</option>
+                </select>
+            </p>
+            <p>
+                City:
+                <select name="City" multiple size="4">
+                    <option value="tokyo" selected>Tokyo</option>
+                    <option value="nagoya">Nagoya</option>
+                    <option value="osaka">Osaka</option>
+                    <option value="fukuoka">Fukuoka</option>
+                </select>
+            </p>
+            <p>
+                Phone:
+                <input type="radio" name="color" value="black" checked> black
+                <input type="radio" name="color" value="white"> white
+            </p>
+            <p>
+                コメント：
+                <textarea name="comment" cols="40" rows="20">コメント</textarea>
+            </p>
+            <p>
+                <button type="submit"><strong>送信！</strong></button>
+            </p>
+            <p>
+                <button type="button"><strong>処理をする</strong></button>
+            </p>
+            <p><input type="submit" value="送信！" disabled></p>
+        </form>
+    </article>
+    <article>
+        <h1>アンケート</h1>
+        <form action="survey.php" method="post">
+            <p>メールアドレス:<input type="text" name="email" size="50" placeholder="please enter email"></p>
+            <p>ログイン:<input type="password" name="password" size="50" placeholder="please enter password"></p>
+            <input type="hidden"name="user_id" value="1234">
+            <p><input type="submit" value="送信！"></p>
+        </form>
+    </article>
+    <article>
+        <h1>文字参照</h1>
+        <p>「&lt;p&gt;タグを段落です」</p>
+        <input type="text" value="区切り文字は&quot;です">
+        <p>「この記号の文字は&amp;quot;」</p>
+    </article>
+    <h1>おいしいごはん！</h1>
+    <nav>
+        - ホーム
+        - このさいとについて
+        - プロフィール
+        <table>
+            <thead>
+            <tr>
+                <th>Size</th><th>Price</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>S</td><td>150</td>
+            </tr>
+            <tr>
+                <td>S</td><td>150</td>
+            </tr>
+            <tr>
+                <td colspan="2">free for kids</td>
+            </tr>
+            </tbody>
+        </table>
+    </nav>
+</header>
+<body>
+<section>
+    <h1>今月のおいしいごはん</h1>
+    <p><img src="dog.png" width="512" height="512" alt="犬"></p>
+    <article>
+        <h1>おいしいごはん#12</h1>
+        <div style="background:white;">
+            <p>至高<br>の<strong>たまごかけはん</strong>→<a href="#stuff">材料へ</a> </p>
+            <h2 id="stuff"><span style="color:gold;">材料</span></h2>
+            <ul>
+                <li><a href="index2.html" target="_blank">卵</a></li>
+                <li>しょうゆ</li>
+                <li>ごはん</li>
+            </ul>
+            <h2>手順</h2>
+            <hr>
+            <p>ところで・・・</p>
+            <pre>
+                poem
+                    poem
+                        poem
+            </pre>
+        </div>
+        <blockquote>
+            TKG最高！
+        </blockquote>
+    </article>
+</section>
+<section>
+    <article>
+        <h1>しんちゃくのおいしいごはん</h1>
+        おいしいごはん #32
+    </article>
+</section>
+<aside>
+    おすすめ本
+    -1
+    -2
+    -3
+</aside>
+<footer>
+    このさいとはによって運営されています
+</footer>
+<p class="message active">こんにちは</p>
+<p class="message" style="background:white;">こんにちは</p>
+</body>
+</html>
